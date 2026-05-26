@@ -340,7 +340,43 @@ ul {
     line-height: 1.4;
 }
 
-/* ───────── Project Cards ───────── */
+/* ───────── Project Filters ───────── */
+
+.project-filters {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.filter-btn {
+    font-family: inherit;
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 0.4rem 1rem;
+    border: none;
+    border-radius: 20px;
+    background: #f0eeeb;
+    color: #5a5a5a;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+}
+
+.filter-btn:hover {
+    background: #e0ddd7;
+    color: #1a1a1a;
+}
+
+.filter-btn--active {
+    background: #2b5797;
+    color: #ffffff;
+}
+
+.filter-btn--active:hover {
+    background: #1e3f6f;
+    color: #ffffff;
+}
+
+/* ───────── Project Grid & Cards ───────── */
 
 .projects-grid {
     display: grid;
@@ -405,6 +441,30 @@ ul {
     font-weight: 500;
     margin-top: auto;
     padding-top: 0.5rem;
+}
+
+.project-card__github-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: #5a5a5a;
+    padding: 0.35rem 0.9rem;
+    border: 1px solid #e0ddd7;
+    border-radius: 6px;
+    margin-top: 0.75rem;
+    transition: color 0.15s, border-color 0.15s;
+    align-self: flex-start;
+}
+
+.project-card__github-btn:hover {
+    color: #1a1a1a;
+    border-color: #b8b4ab;
+}
+
+.project-card__github-btn svg {
+    flex-shrink: 0;
 }
 
 /* ───────── Certifications ───────── */
