@@ -1,0 +1,748 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Rangga Dimas — Full-Stack Web Developer</title>
+        <meta
+            name="description"
+            content="Portfolio of Rangga Dimas, a Full-Stack Web Developer experienced in Laravel, Vue.js, Nuxt.js, React.js, enterprise systems, API integration, frontend architecture, and production support."
+        />
+        <meta
+            property="og:title"
+            content="Rangga Dimas — Full-Stack Web Developer"
+        />
+        <meta
+            property="og:description"
+            content="Portfolio of Rangga Dimas, a Full-Stack Web Developer experienced in Laravel, Vue.js, Nuxt.js, React.js, enterprise systems, API integration, frontend architecture, and production support."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="" />
+        <meta property="og:image" content="assets/profile.jpg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="app">
+            <aside class="sidebar" aria-label="Profile information">
+                <div class="sidebar__avatar-wrapper">
+                    <img
+                        src="assets/profile.png"
+                        alt="Rangga Dimas"
+                        class="sidebar__avatar"
+                        onerror="
+                            this.style.display = 'none';
+                            this.nextElementSibling.style.display = 'flex';
+                        "
+                    />
+                    <div class="sidebar__avatar-fallback" aria-hidden="true">
+                        RD
+                    </div>
+                </div>
+                <div class="sidebar__info">
+                    <h1 class="sidebar__name">Rangga Dimas</h1>
+                    <p class="sidebar__role">Full-Stack Web Developer</p>
+                    <p class="sidebar__location">
+                        Bogor, Jawa Barat, Indonesia
+                    </p>
+                    <p class="sidebar__bio">
+                        I build practical, maintainable web applications for
+                        business operations, enterprise workflows, and internal
+                        systems. My work spans backend development, frontend
+                        architecture, API integration, production debugging, and
+                        post-go-live support.
+                    </p>
+                    <div class="sidebar__contacts">
+                        <a
+                            href="mailto:rangga7765@gmail.com"
+                            class="sidebar__contact-link"
+                        >
+                            <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <rect
+                                    x="2"
+                                    y="4"
+                                    width="20"
+                                    height="16"
+                                    rx="2"
+                                />
+                                <path
+                                    d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"
+                                />
+                            </svg>
+                            rangga7765@gmail.com
+                        </a>
+                        <a
+                            href="tel:+6285710650692"
+                            class="sidebar__contact-link"
+                        >
+                            <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                                />
+                            </svg>
+                            0857-1065-0692
+                        </a>
+                        <a
+                            href="https://github.com/buckypinkman"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="sidebar__contact-link"
+                        >
+                            <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                            >
+                                <path
+                                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"
+                                />
+                            </svg>
+                            buckypinkman
+                        </a>
+                    </div>
+                </div>
+            </aside>
+
+            <div class="main">
+                <header>
+                    <nav class="navbar" aria-label="Section navigation">
+                        <button
+                            class="navbar__toggle"
+                            aria-label="Toggle navigation menu"
+                            aria-expanded="false"
+                        >
+                            <span></span><span></span><span></span>
+                        </button>
+                        <ul class="navbar__links">
+                            <li><a href="#about" class="active">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#experience">Experience</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#education">Education</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </header>
+
+                <main>
+                    <section id="about" class="section">
+                        <h2 class="section__title">About</h2>
+                        <div class="card card--text">
+                            <p>
+                                Full-Stack Web Developer with 4+ years of
+                                experience building scalable, secure, and
+                                maintainable web applications. Strong background
+                                in PHP and Javascript environment.
+                            </p>
+                            <p>
+                                Experienced in collaborating with Business
+                                Analysts and UI/UX teams to translate business
+                                requirements into reliable, high-performance
+                                applications. Interested in clean architecture,
+                                frontend architecture, performance optimization,
+                                API integration, and continuous learning.
+                            </p>
+                        </div>
+                    </section>
+
+                    <section id="skills" class="section">
+                        <h2 class="section__title">Technical Skills</h2>
+                        <div class="skills">
+                            <div class="skill-group">
+                                <h3 class="skill-group__title">Backend</h3>
+                                <span class="badge">PHP</span>
+                                <span class="badge">Laravel</span>
+                                <span class="badge">Lumen</span>
+                                <span class="badge">Node.js</span>
+                                <span class="badge">Go</span>
+                                <span class="badge">REST API</span>
+                                <span class="badge">gRPC</span>
+                                <span class="badge"
+                                    >Third-party API Integration</span
+                                >
+                            </div>
+                            <div class="skill-group">
+                                <h3 class="skill-group__title">Frontend</h3>
+                                <span class="badge">JavaScript</span>
+                                <span class="badge">TypeScript</span>
+                                <span class="badge">Vue.js</span>
+                                <span class="badge">Nuxt.js</span>
+                                <span class="badge">React.js</span>
+                                <span class="badge">Next.js</span>
+                                <span class="badge">jQuery</span>
+                            </div>
+                            <div class="skill-group">
+                                <h3 class="skill-group__title">
+                                    UI &amp; Styling
+                                </h3>
+                                <span class="badge">Tailwind CSS</span>
+                                <span class="badge">Bootstrap</span>
+                                <span class="badge">HTML</span>
+                                <span class="badge">CSS</span>
+                            </div>
+                            <div class="skill-group">
+                                <h3 class="skill-group__title">Database</h3>
+                                <span class="badge">MySQL</span>
+                                <span class="badge">PostgreSQL</span>
+                            </div>
+                            <div class="skill-group">
+                                <h3 class="skill-group__title">
+                                    Tools &amp; Others
+                                </h3>
+                                <span class="badge">Git</span>
+                                <span class="badge">API Integration</span>
+                                <span class="badge">Production Debugging</span>
+                                <span class="badge">Query Optimization</span>
+                                <span class="badge">Ticketing Support</span>
+                                <span class="badge">Post-go-live Support</span>
+                                <span class="badge">Client-facing Support</span>
+                                <span class="badge"
+                                    >Performance Optimization</span
+                                >
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="experience" class="section">
+                        <h2 class="section__title">Work Experience</h2>
+                        <div class="timeline">
+                            <div class="timeline__entry">
+                                <div class="timeline__date">
+                                    Mar 2023 – Mar 2026
+                                </div>
+                                <div class="card">
+                                    <div class="card__header">
+                                        <h3 class="card__title">
+                                            Full-Stack Web Developer
+                                        </h3>
+                                        <p class="card__subtitle">
+                                            CV Gemilang Teknologi · Full Time
+                                        </p>
+                                    </div>
+                                    <p class="card__description">
+                                        Develop and maintain enterprise web
+                                        applications across project management,
+                                        procurement, IT service management, and
+                                        enterprise risk management domains using
+                                        Laravel, Vue.js, Nuxt.js, TypeScript,
+                                        Tailwind CSS, REST API.
+                                    </p>
+                                    <ul class="card__list">
+                                        <li>
+                                            Worked on a Project Management
+                                            System for one of Indonesia&rsquo;s
+                                            largest power generation companies,
+                                            involved end-to-end from early
+                                            execution through go-live and
+                                            post-go-live support.
+                                        </li>
+                                        <li>
+                                            Maintained an Enterprise Risk
+                                            Management platform for a major
+                                            investment group in Indonesia,
+                                            handling query optimization,
+                                            production debugging, issue
+                                            investigation, and client-facing
+                                            support.
+                                        </li>
+                                        <li>
+                                            Maintained IT Service Management
+                                            platforms for multinational
+                                            enterprise clients in the steel
+                                            manufacturing and FMCG industries,
+                                            handling performance optimization,
+                                            production debugging, ticket
+                                            resolution, and direct client
+                                            support.
+                                        </li>
+                                        <li>
+                                            Acted as Frontend Engineer for an
+                                            internal Enterprise Procurement
+                                            System, helping migrate the frontend
+                                            from Laravel-based views to Vue.js
+                                            and Nuxt.js.
+                                        </li>
+                                        <li>
+                                            Architected major parts of the
+                                            frontend structure including
+                                            reusable composables, business logic
+                                            separation, dynamic form rendering,
+                                            and BFF-layer communication with
+                                            backend gRPC services.
+                                        </li>
+                                        <li>
+                                            Collaborated with Business Analysts
+                                            and UI/UX designers to translate
+                                            business requirements into scalable,
+                                            maintainable technical solutions.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="timeline__entry">
+                                <div class="timeline__date">
+                                    Aug 2022 – Mar 2023
+                                </div>
+                                <div class="card">
+                                    <div class="card__header">
+                                        <h3 class="card__title">
+                                            Full-Stack Web Developer
+                                        </h3>
+                                        <p class="card__subtitle">
+                                            PT Global Teknologi Media Integrasi
+                                            · Freelance
+                                        </p>
+                                    </div>
+                                    <ul class="card__list">
+                                        <li>
+                                            Built a data-driven geolocation
+                                            dashboard for a government
+                                            institution, transforming BPS
+                                            datasets into actionable insights
+                                            using Laravel and PostgreSQL.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="timeline__entry">
+                                <div class="timeline__date">
+                                    Jun 2021 – Mar 2023
+                                </div>
+                                <div class="card">
+                                    <div class="card__header">
+                                        <h3 class="card__title">
+                                            Laravel Developer / Full-Stack Web
+                                            Developer
+                                        </h3>
+                                        <p class="card__subtitle">
+                                            PT Robust Creative Media · Full Time
+                                        </p>
+                                    </div>
+                                    <p class="card__description">
+                                        Built and maintained low to
+                                        enterprise-level web applications using
+                                        Laravel, Lumen, Vue.js, jQuery,
+                                        React.js, Express.js, and MySQL across
+                                        multiple production domains.
+                                    </p>
+                                    <ul class="card__list">
+                                        <li>
+                                            Developed modules for a Voyage
+                                            Management System and integrated an
+                                            external ERP API using Lumen and
+                                            Vue.js.
+                                        </li>
+                                        <li>
+                                            Built dashboard and CRUD modules for
+                                            a Content Management System using
+                                            Laravel.
+                                        </li>
+                                        <li>
+                                            Integrated IoT face recognition
+                                            devices into a Visitor Management
+                                            System using Laravel.
+                                        </li>
+                                        <li>
+                                            Developed dashboard and transaction
+                                            modules for a cashier Point-of-Sale
+                                            system using Laravel.
+                                        </li>
+                                        <li>
+                                            Built a Messaging Gateway frontend
+                                            from scratch using Vue.js.
+                                        </li>
+                                        <li>
+                                            Integrated applications with
+                                            third-party services, ERP platforms,
+                                            messaging gateways, and external
+                                            APIs.
+                                        </li>
+                                        <li>
+                                            Supported end-to-end development
+                                            across frontend, backend, database
+                                            operations, API implementation, bug
+                                            fixing, and production maintenance.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="projects" class="section">
+                        <h2 class="section__title">Selected Projects</h2>
+                        <div class="projects-grid">
+                            <article class="project-card card">
+                                <div class="project-card__meta">
+                                    <span class="project-card__industry"
+                                        >Power Generation / Energy</span
+                                    >
+                                    <span class="project-card__role"
+                                        >Full-Stack Developer</span
+                                    >
+                                </div>
+                                <h3 class="project-card__title">
+                                    Enterprise Project Management System
+                                </h3>
+                                <p class="project-card__description">
+                                    Developed an enterprise project management
+                                    system for one of Indonesia&rsquo;s largest
+                                    power generation companies. Involved from
+                                    early execution to go-live and post-go-live
+                                    support, including requirement translation,
+                                    feature implementation, production
+                                    preparation, bug fixing, and production
+                                    support.
+                                </p>
+                                <div class="project-card__tech">
+                                    <span class="badge">Laravel</span>
+                                    <span class="badge">Vue.js</span>
+                                    <span class="badge">TypeScript</span>
+                                    <span class="badge">MySQL</span>
+                                    <span class="badge">REST API</span>
+                                </div>
+                                <p class="project-card__impact">
+                                    Helped deliver a production-ready enterprise
+                                    platform used to support project management
+                                    workflows.
+                                </p>
+                            </article>
+
+                            <article class="project-card card">
+                                <div class="project-card__meta">
+                                    <span class="project-card__industry"
+                                        >Investment / Corporate Risk</span
+                                    >
+                                    <span class="project-card__role"
+                                        >Maintainer / Full-Stack Developer</span
+                                    >
+                                </div>
+                                <h3 class="project-card__title">
+                                    Enterprise Risk Management Platform
+                                </h3>
+                                <p class="project-card__description">
+                                    Maintained and supported an enterprise risk
+                                    management platform for a major investment
+                                    group in Indonesia. Responsibilities
+                                    included query optimization, debugging
+                                    production issues, issue investigation,
+                                    platform maintenance, and client-facing
+                                    support.
+                                </p>
+                                <div class="project-card__tech">
+                                    <span class="badge">Laravel</span>
+                                    <span class="badge">MySQL</span>
+                                    <span class="badge">Vue.js</span>
+                                    <span class="badge">REST API</span>
+                                </div>
+                                <p class="project-card__impact">
+                                    Improved platform stability, supported
+                                    production operations, and helped resolve
+                                    client issues effectively.
+                                </p>
+                            </article>
+
+                            <article class="project-card card">
+                                <div class="project-card__meta">
+                                    <span class="project-card__industry"
+                                        >Steel Manufacturing &amp; FMCG</span
+                                    >
+                                    <span class="project-card__role"
+                                        >Maintainer / Full-Stack Developer</span
+                                    >
+                                </div>
+                                <h3 class="project-card__title">
+                                    IT Service Management Platforms
+                                </h3>
+                                <p class="project-card__description">
+                                    Maintained IT Service Management
+                                    applications for enterprise clients in the
+                                    steel manufacturing and FMCG industries.
+                                    Worked on query optimization, production
+                                    debugging, support tickets, client
+                                    communication, and ongoing platform
+                                    improvements.
+                                </p>
+                                <div class="project-card__tech">
+                                    <span class="badge">Laravel</span>
+                                    <span class="badge">Vue.js</span>
+                                    <span class="badge">MySQL</span>
+                                    <span class="badge">REST API</span>
+                                </div>
+                                <p class="project-card__impact">
+                                    Supported critical internal IT operations
+                                    through stable maintenance and performance
+                                    improvements.
+                                </p>
+                            </article>
+
+                            <article class="project-card card">
+                                <div class="project-card__meta">
+                                    <span class="project-card__industry"
+                                        >Enterprise Procurement</span
+                                    >
+                                    <span class="project-card__role"
+                                        >Frontend Engineer</span
+                                    >
+                                </div>
+                                <h3 class="project-card__title">
+                                    Internal Enterprise Procurement System
+                                </h3>
+                                <p class="project-card__description">
+                                    Worked as a frontend engineer on an internal
+                                    enterprise procurement platform. Helped
+                                    migrate the frontend from Laravel-based
+                                    views to Vue.js and Nuxt.js. Architected
+                                    major frontend parts using reusable
+                                    composables, business logic separation,
+                                    dynamic form rendering, and BFF
+                                    communication with backend gRPC services.
+                                </p>
+                                <div class="project-card__tech">
+                                    <span class="badge">Vue.js</span>
+                                    <span class="badge">Nuxt.js</span>
+                                    <span class="badge">TypeScript</span>
+                                    <span class="badge">Tailwind CSS</span>
+                                    <span class="badge">BFF</span>
+                                    <span class="badge">gRPC</span>
+                                </div>
+                                <p class="project-card__impact">
+                                    Improved frontend maintainability,
+                                    scalability, and developer experience
+                                    through better structure and reusable
+                                    patterns.
+                                </p>
+                            </article>
+
+                            <article class="project-card card">
+                                <div class="project-card__meta">
+                                    <span class="project-card__industry"
+                                        >Logistics / Operations</span
+                                    >
+                                    <span class="project-card__role"
+                                        >Full-Stack Developer</span
+                                    >
+                                </div>
+                                <h3 class="project-card__title">
+                                    Voyage Management System
+                                </h3>
+                                <p class="project-card__description">
+                                    Developed several modules for a voyage
+                                    management system and integrated an external
+                                    ERP API using Lumen and Vue.js.
+                                </p>
+                                <div class="project-card__tech">
+                                    <span class="badge">Lumen</span>
+                                    <span class="badge">Vue.js</span>
+                                    <span class="badge">MySQL</span>
+                                    <span class="badge"
+                                        >ERP API Integration</span
+                                    >
+                                </div>
+                                <p class="project-card__impact">
+                                    Enabled system integration with external ERP
+                                    services and supported operational
+                                    workflows.
+                                </p>
+                            </article>
+
+                            <article class="project-card card">
+                                <div class="project-card__meta">
+                                    <span class="project-card__industry"
+                                        >Visitor Management / Workplace</span
+                                    >
+                                    <span class="project-card__role"
+                                        >Backend Developer</span
+                                    >
+                                </div>
+                                <h3 class="project-card__title">
+                                    Visitor Management System with IoT
+                                </h3>
+                                <p class="project-card__description">
+                                    Integrated IoT face recognition devices into
+                                    a visitor management system using Laravel.
+                                </p>
+                                <div class="project-card__tech">
+                                    <span class="badge">Laravel</span>
+                                    <span class="badge">MySQL</span>
+                                    <span class="badge">IoT Integration</span>
+                                    <span class="badge">REST API</span>
+                                </div>
+                                <p class="project-card__impact">
+                                    Connected physical visitor access flow with
+                                    a web-based management system.
+                                </p>
+                            </article>
+
+                            <article class="project-card card">
+                                <div class="project-card__meta">
+                                    <span class="project-card__industry"
+                                        >Digital Content / Operations</span
+                                    >
+                                    <span class="project-card__role"
+                                        >Backend Developer</span
+                                    >
+                                </div>
+                                <h3 class="project-card__title">
+                                    Content Management System
+                                </h3>
+                                <p class="project-card__description">
+                                    Developed dashboard and CRUD modules for a
+                                    content management system using Laravel.
+                                </p>
+                                <div class="project-card__tech">
+                                    <span class="badge">Laravel</span>
+                                    <span class="badge">MySQL</span>
+                                    <span class="badge">Bootstrap</span>
+                                </div>
+                                <p class="project-card__impact">
+                                    Helped internal users manage structured
+                                    content through a reliable dashboard
+                                    interface.
+                                </p>
+                            </article>
+
+                            <article class="project-card card">
+                                <div class="project-card__meta">
+                                    <span class="project-card__industry"
+                                        >Retail / Transaction Management</span
+                                    >
+                                    <span class="project-card__role"
+                                        >Backend Developer</span
+                                    >
+                                </div>
+                                <h3 class="project-card__title">
+                                    Cashier Point-of-Sale System
+                                </h3>
+                                <p class="project-card__description">
+                                    Developed dashboard and transaction modules
+                                    for a cashier point-of-sale system using
+                                    Laravel.
+                                </p>
+                                <div class="project-card__tech">
+                                    <span class="badge">Laravel</span>
+                                    <span class="badge">MySQL</span>
+                                </div>
+                                <p class="project-card__impact">
+                                    Supported transaction management and
+                                    operational reporting for business users.
+                                </p>
+                            </article>
+
+                            <article class="project-card card">
+                                <div class="project-card__meta">
+                                    <span class="project-card__industry"
+                                        >Messaging / Communication</span
+                                    >
+                                    <span class="project-card__role"
+                                        >Frontend Developer</span
+                                    >
+                                </div>
+                                <h3 class="project-card__title">
+                                    Messaging Gateway Frontend
+                                </h3>
+                                <p class="project-card__description">
+                                    Built the frontend of a messaging gateway
+                                    platform from scratch using Vue.js.
+                                </p>
+                                <div class="project-card__tech">
+                                    <span class="badge">Vue.js</span>
+                                    <span class="badge">JavaScript</span>
+                                    <span class="badge">REST API</span>
+                                </div>
+                                <p class="project-card__impact">
+                                    Created a usable frontend interface for
+                                    managing messaging-related workflows.
+                                </p>
+                            </article>
+                        </div>
+                    </section>
+
+                    <section id="education" class="section">
+                        <h2 class="section__title">Education</h2>
+                        <div class="card">
+                            <div class="card__header">
+                                <h3 class="card__title">
+                                    Bachelor of Information Systems
+                                </h3>
+                                <p class="card__subtitle">
+                                    Universitas Terbuka — Bogor
+                                </p>
+                            </div>
+                            <p class="card__meta">2023 – 2027</p>
+                        </div>
+                    </section>
+
+                    <section id="certifications" class="section">
+                        <h2 class="section__title">Certifications</h2>
+                        <div class="cert-list">
+                            <div class="cert-item card">
+                                <h3 class="card__title">
+                                    Data Structures &amp; Algorithms
+                                </h3>
+                                <p class="card__subtitle">Udemy · Nov 2021</p>
+                            </div>
+                            <div class="cert-item card">
+                                <h3 class="card__title">
+                                    Vue – The Complete Guide
+                                </h3>
+                                <p class="card__subtitle">Udemy · Jul 2020</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="contact" class="section">
+                        <h2 class="section__title">Contact</h2>
+                        <div class="contact-cta card">
+                            <p class="contact-cta__text">
+                                Looking for a reliable developer for your next
+                                project or team?
+                            </p>
+                            <a
+                                href="mailto:rangga7765@gmail.com"
+                                class="contact-cta__button"
+                                >rangga7765@gmail.com</a
+                            >
+                            <p class="contact-cta__phone">0857-1065-0692</p>
+                        </div>
+                    </section>
+                </main>
+
+                <footer class="footer">
+                    <p>
+                        &copy; 2026 Rangga Dimas. Built with HTML, CSS, and a
+                        little JavaScript.
+                    </p>
+                </footer>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

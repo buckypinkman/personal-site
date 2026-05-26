@@ -1,0 +1,626 @@
+/* ───────── Reset & Base ───────── */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    font-family:
+        "Inter",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        sans-serif;
+    background: #ffffff;
+    color: #1a1a1a;
+    line-height: 1.6;
+    font-size: 0.95rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ───────── Layout ───────── */
+
+.app {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    min-height: 100vh;
+}
+
+/* ───────── Sidebar ───────── */
+
+.sidebar {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    background: #ffffff;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.sidebar__avatar-wrapper {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+}
+
+.sidebar__avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.sidebar__avatar-fallback {
+    display: none;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #e8e6e1;
+    color: #5a5a5a;
+    font-size: 2rem;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar__name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 0.25rem;
+}
+
+.sidebar__role {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #2b5797;
+    margin-bottom: 0.5rem;
+}
+
+.sidebar__location {
+    font-size: 0.8rem;
+    color: #8a8a8a;
+    margin-bottom: 0.75rem;
+}
+
+.sidebar__bio {
+    font-size: 0.85rem;
+    color: #5a5a5a;
+    line-height: 1.5;
+}
+
+.sidebar__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding-top: 0.5rem;
+}
+
+.sidebar__contact-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    color: #5a5a5a;
+    transition: color 0.15s;
+}
+
+.sidebar__contact-link:hover {
+    color: #2b5797;
+}
+
+.sidebar__contact-link svg {
+    flex-shrink: 0;
+    opacity: 0.6;
+}
+
+/* ───────── Main Content ───────── */
+
+.main {
+    max-width: 720px;
+    padding: 2rem 3rem;
+    width: 100%;
+}
+
+/* ───────── Navbar ───────── */
+
+.navbar {
+    position: relative;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+}
+
+.navbar__toggle {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.navbar__toggle span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #1a1a1a;
+    border-radius: 2px;
+    transition:
+        transform 0.2s,
+        opacity 0.2s;
+}
+
+.navbar__links {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.navbar__links a {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #5a5a5a;
+    transition: color 0.15s;
+    white-space: nowrap;
+}
+
+.navbar__links a:hover,
+.navbar__links a.active {
+    color: #2b5797;
+}
+
+/* ───────── Sections ───────── */
+
+.section {
+    padding: 3rem 0;
+}
+
+.section:first-of-type {
+    padding-top: 0.5rem;
+}
+
+.section__title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #e8e6e1;
+}
+
+/* ───────── Cards ───────── */
+
+.card {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+    transition:
+        transform 0.2s,
+        box-shadow 0.2s;
+}
+
+.card--text p + p {
+    margin-top: 1rem;
+}
+
+.card__header {
+    margin-bottom: 0.5rem;
+}
+
+.card__title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.card__subtitle {
+    font-size: 0.85rem;
+    color: #2b5797;
+    font-weight: 500;
+    margin-top: 0.15rem;
+}
+
+.card__description {
+    font-size: 0.88rem;
+    color: #3a3a3a;
+    margin: 0.75rem 0;
+    line-height: 1.6;
+}
+
+.card__meta {
+    font-size: 0.8rem;
+    color: #8a8a8a;
+    margin-top: 0.5rem;
+}
+
+.card__list {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.card__list li {
+    font-size: 0.85rem;
+    color: #4a4a4a;
+    line-height: 1.5;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.card__list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.6em;
+    width: 4px;
+    height: 4px;
+    background: #2b5797;
+    border-radius: 50%;
+}
+
+/* ───────── Skills ───────── */
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.skill-group__title {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #5a5a5a;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 0.5rem;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    background: #f0eeeb;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    color: #1a1a1a;
+    margin: 0.2rem;
+    white-space: nowrap;
+}
+
+/* ───────── Timeline ───────── */
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.timeline__entry {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 1.5rem;
+}
+
+.timeline__date {
+    font-size: 0.8rem;
+    color: #5a5a5a;
+    font-weight: 500;
+    padding-top: 0.25rem;
+    line-height: 1.4;
+}
+
+/* ───────── Project Cards ───────── */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.project-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.project-card__meta {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.project-card__industry {
+    font-size: 0.7rem;
+    color: #2b5797;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.project-card__role {
+    font-size: 0.7rem;
+    background: #e8e6e1;
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+    color: #5a5a5a;
+    font-weight: 500;
+}
+
+.project-card__title {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.project-card__description {
+    font-size: 0.82rem;
+    color: #4a4a4a;
+    line-height: 1.55;
+}
+
+.project-card__tech {
+    margin-top: 0.25rem;
+}
+
+.project-card__impact {
+    font-size: 0.8rem;
+    color: #2b5797;
+    font-weight: 500;
+    margin-top: auto;
+    padding-top: 0.5rem;
+}
+
+/* ───────── Certifications ───────── */
+
+.cert-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.cert-item.card {
+    padding: 1rem 1.5rem;
+}
+
+.cert-item .card__title {
+    font-size: 0.95rem;
+}
+
+/* ───────── Contact CTA ───────── */
+
+.contact-cta {
+    text-align: center;
+    padding: 2.5rem;
+}
+
+.contact-cta__text {
+    font-size: 1rem;
+    color: #3a3a3a;
+    margin-bottom: 1.25rem;
+}
+
+.contact-cta__button {
+    display: inline-block;
+    background: #2b5797;
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background 0.2s;
+}
+
+.contact-cta__button:hover {
+    background: #1e3f6f;
+}
+
+.contact-cta__phone {
+    font-size: 0.85rem;
+    color: #8a8a8a;
+    margin-top: 0.75rem;
+}
+
+/* ───────── Footer ───────── */
+
+.footer {
+    padding: 2rem 0 1rem;
+    margin-top: 2rem;
+}
+
+.footer p {
+    font-size: 0.8rem;
+    color: #8a8a8a;
+}
+
+/* ───────── Responsive: Tablet ───────── */
+
+@media (max-width: 1024px) {
+    .app {
+        grid-template-columns: 260px 1fr;
+    }
+
+    .sidebar {
+        padding: 1.5rem;
+    }
+
+    .sidebar__avatar-wrapper,
+    .sidebar__avatar,
+    .sidebar__avatar-fallback {
+        width: 100px;
+        height: 100px;
+    }
+
+    .sidebar__avatar-fallback {
+        font-size: 1.6rem;
+    }
+
+    .main {
+        padding: 1.5rem 2rem;
+    }
+}
+
+/* ───────── Responsive: Mobile ───────── */
+
+@media (max-width: 768px) {
+    .app {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: static;
+        height: auto;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 1rem;
+        padding: 1.25rem;
+    }
+
+    .sidebar__avatar-wrapper,
+    .sidebar__avatar,
+    .sidebar__avatar-fallback {
+        width: 64px;
+        height: 64px;
+    }
+
+    .sidebar__avatar-fallback {
+        font-size: 1.1rem;
+    }
+
+    .sidebar__info {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .sidebar__name {
+        font-size: 1.2rem;
+    }
+
+    .sidebar__bio {
+        display: none;
+    }
+
+    .sidebar__contacts {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        padding-top: 0;
+    }
+
+    .main {
+        padding: 1rem 1.25rem;
+    }
+
+    .navbar__links {
+        display: none;
+        flex-direction: column;
+        gap: 0.75rem;
+        padding: 1rem 0;
+    }
+
+    .navbar__links.navbar__links--open {
+        display: flex;
+    }
+
+    .navbar__toggle {
+        display: flex;
+    }
+
+    .section {
+        padding: 2rem 0;
+    }
+
+    .section__title {
+        font-size: 1.4rem;
+    }
+
+    .timeline__entry {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+
+    .timeline__date {
+        margin-bottom: 0;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card:hover {
+        transform: none;
+        box-shadow: none;
+    }
+}
+
+/* ───────── Responsive: Small Mobile ───────── */
+
+@media (max-width: 480px) {
+    .sidebar {
+        padding: 1rem;
+        gap: 0.75rem;
+    }
+
+    .sidebar__name {
+        font-size: 1.05rem;
+    }
+
+    .sidebar__role {
+        font-size: 0.8rem;
+    }
+
+    .sidebar__location {
+        font-size: 0.75rem;
+    }
+
+    .main {
+        padding: 0.75rem 1rem;
+    }
+
+    .card {
+        padding: 1rem;
+    }
+
+    .contact-cta {
+        padding: 1.5rem;
+    }
+}
